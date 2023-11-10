@@ -18,6 +18,65 @@
     />
   </head>
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Tính tiền từ thiện</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>nhập tên phim</label>
+                <input id="movieName" type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>Giá vé người lớn</label>
+                <input
+                  id="adultTicketPrice"
+                  type="number"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label>Giá vé trẻ em</label>
+                <input
+                  id="childTicketPrice"
+                  type="number"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label>Số vé người lớn đã bán</label>
+                <input
+                  id="soldAdultTickets"
+                  type="number"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label>Số vé trẻ em đã bán</label>
+                <input
+                  id="soldChildTickets"
+                  type="number"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label>Tỷ lệ phần trăm</label>
+                <input
+                  id="donationPercentage"
+                  type="number"
+                  class="form-control"
+                />
+              </div>
+              <button id="calculateDonation" class="btn btn-success">
+                Tính
+              </button>
+            </div>
+            <div id="result" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
